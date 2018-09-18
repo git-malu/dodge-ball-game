@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lu Ma">
+    <title>Dodge Ball</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h2>Dodge Ball</h2>
+                <img id="icon" src="icon.jpg">
+                <p>Author: Lu Ma (lm44)</p>
+                <h5>Win condition: </h5>
+                <p>Eliminate opponent by throwing ball at him.</p>
+                <p>Tips: Dodge the blue ball! The game restarts automatically.</p>
+                <p>...........................................</p>
+                <h5>Controls: </h5>
+                <p>1. Use W, A, S, D to move.</p>
+                <p>2. Use mouse to aim.</p>
+                <p>3. Left click to shoot blue ball.</p>
+            </td>
+            <td>
+                <canvas id="the-canvas" width="500" height="800"></canvas>
+            </td>
+            <td id="board">
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
+                <p>Accuracy (metric): <span id="accuracy">100</span> %</p>
+                <p>Difficulty: <span id="difficulty">easy</span></p>
+                <p>
+                    <button id="easy-button" type="button" class="btn btn-primary">Easy</button>
+                    <button id="hard-button" type="button" class="btn btn-primary">Hard</button>
+                </p>
+                <p><button id="start-button" type="button" class="btn btn-primary">Start Game</button></p>
+                <br><br>
+                <p> <---- you are here!</p>
+            </td>
+
+        </tr>
+    </table>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
